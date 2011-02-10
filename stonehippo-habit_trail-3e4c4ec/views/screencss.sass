@@ -1,0 +1,57 @@
+!main_color= #000
+!background_color= #fff
+!highlight_color= #f00
+!baseline= 16px
+
+=section
+  :margin-top= !baseline
+
+=small_font
+  :font-size= !baseline * 0.80
+
+*
+  :font-family Arial, sans-serif
+
+body
+  :width 720px
+  :margin= !baseline auto 0 auto
+
+h1
+  :color= !highlight_color
+  :font-size= !baseline * 2.5
+  :letter-spacing -0.85px
+
+h2
+  :font-size= !baseline * 2
+
+h3
+  :font-size= !baseline * 1.4
+  
+p 
+  :margin-bottom= !baseline
+
+.small
+  +small_font
+
+.task_list, .userlist
+  :margin= !baseline 0 0 0
+
+.task_item
+  :margin-bottom= !baseline /2
+
+#add_task_form
+  :display none
+
+#add_task, #cancel_add_task
+  +small_font
+  
+#header
+  +section
+  :border-top= !baseline solid !main_color
+
+#main
+  +section
+#footer
+  +section
+  +small_font
+  :text-align right
