@@ -1,0 +1,482 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  
+    <style type="text/css">
+      <!--
+      table { 
+        border-spacing: 0ex;
+        border-color: black;
+        border-width: 0 0 1px 1px;
+        border-style: solid;
+        margin: 1ex;
+        font-size: 90%;
+        width: 95%;
+      }
+      td, th { 
+        margin: 0ex; 
+        padding: 0ex;
+        border-color: black;
+        border-width: 1px 1px 0 0;
+        border-style: solid;
+        width: 7ex;
+        text-align: right;
+      }
+      td.grey {
+        background-color: #CCC;
+      }
+      th { padding: 0.2ex 1ex; background-color: #DDD; }
+      span.head { background-color: #CCC; margin: 0ex; padding: 0ex 1ex; }
+      span.note { 
+        background-color: #FFF; 
+        margin: 0ex 0ex; 
+        padding: 0ex 1ex; 
+        position: absolute;
+        top: 3ex; left: 1ex;
+        z-index: -9;
+        text-align: left;
+      }
+      div { 
+        position: relative; 
+        height: 8ex; 
+        border: 0ex solid black; 
+        margin: 0; 
+        padding: 0;
+        text-align: right;
+      }
+      hr { border: 0.4ex solid #FFF; margin: 0; padding: 0}
+      hr#notdone { border: 1ex solid #FFF; }
+      hr.yoga { 
+        border-color: blue; 
+        position: absolute;
+        top: 3ex; left: 0%;
+        width: 100%;
+        z-index: -10;
+        padding: 0;
+        margin: 0;
+      }
+      span.yoga { color: blue; }
+      hr.fable { 
+        border-color: red; 
+        position: absolute;
+        top: 5ex; left: 0ex;
+        width: 100%;
+        z-index: -10;
+        padding: 0;
+        margin: 0;
+      }
+      span.fable { color: red; }
+      hr.mint { 
+        border-color: green; 
+        position: absolute;
+        height: 100%;
+        top: 0ex; left: 4ex;
+        padding: 0;
+        margin: 0;
+        z-index: -10;
+      }
+      span.mint { color: green; }
+      hr.crossfit { 
+        border-color: black; 
+        position: absolute;
+        height: 100%;
+        top: 0ex; left: 2ex;
+        padding: 0;
+        margin: 0;
+        z-index: -10;
+      }
+      span.crossfit { color: black; }
+      -->
+    </style>
+  </head><body>
+    <table>
+      <caption>January</caption>
+      <tbody><tr>
+        <td>
+          <div>
+            <span class="head">Sat</span>
+            <hr id="" class="fable" title="test">
+            <hr id="" class="mint">
+            <hr id="" class="crossfit">
+            <hr id="" class="yoga">
+            <span class="note">Sick</span>
+          </div>
+        </td>
+        <td>
+          <div>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class=""></span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class=""></span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class=""></span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+            <span class="note">Sick</span>
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Sat</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+            <span class="note">Sick</span>
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Sun</span> 
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+            <span class="note">Sick</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <span class="head">Mon 3</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Tue</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Wed</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Thu</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Fri</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Sat</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Sun</span> 
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <span class="head">Mon 10</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Tue</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Wed</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Thu</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Fri</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Sat</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Sun</span> 
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <span class="head">Mon 17</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Tue</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Wed</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Thu</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Fri</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Sat</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Sun</span> 
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <span class="head">Mon 24</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Tue</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Wed</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Thu</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Fri</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Sat</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <span class="head">Sun</span> 
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <span class="head">Mon 31</span>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+        <td>
+          <div>
+            <hr id="notdone" class="crossfit">
+            <hr id="notdone" class="yoga">
+            <hr id="notdone" class="fable">
+            <hr id="notdone" class="mint">
+          </div>
+        </td>
+      </tr>
+    </tbody></table>
+    <span class="yoga">Yoga</span>, <span class="fable">Fable</span>, <span class="mint">Mint</span>, <span class="crossfit">Crossfit</span>
+        </body></html>
