@@ -12,4 +12,9 @@ class Habit
   property :color,        String
 end
 
+get '/habits' do
+  content_type 'application/json'
+  Habit.all.to_json
+end
+
 DataMapper.auto_upgrade!
