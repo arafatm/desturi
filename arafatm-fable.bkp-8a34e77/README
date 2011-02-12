@@ -1,0 +1,20 @@
+= Make up stories
+
+= TODO:
+
+- depoloy to heroku
+- json CRUD Feature
+- Mark Release as complete
+- Color code Story Status (Not Ready, Ready, IP, Verify, Done)
+- json CRUD Release
+- json to CRUD Story
+- Color code Release as DONE
+- Story History
+- Summary of incomplete/complete in Feature and Release headers of map
+- Allow delay of release
+  - Option to increment all subsequent releases by same timespan
+
+= DONE =
+
+- View only Story map
+- Refactor Task -> Story
