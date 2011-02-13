@@ -4,7 +4,7 @@ require 'data_mapper'
 require 'sinatra'
 require 'logger'
 
-Dir.glob('./app/models/*.rb') do |model|
+Dir.glob('./models/*.rb') do |model|
   require model
 end
 

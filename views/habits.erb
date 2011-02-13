@@ -1,0 +1,110 @@
+<HTML>
+  <HEAD>
+    <style type="text/css">
+      <!--
+      table { 
+        border-spacing: 0ex;
+        border-color: black;
+        border-width: 0 0 1px 1px;
+        border-style: solid;
+        margin: 1ex;
+        font-size: 90%;
+        width: 95%;
+      }
+      td, th { 
+        margin: 0ex; 
+        padding: 0ex;
+        border-color: black;
+        border-width: 1px 1px 0 0;
+        border-style: solid;
+        width: 7ex;
+        text-align: right;
+      }
+      td.grey {
+        background-color: #CCC;
+      }
+      th { padding: 0.2ex 1ex; background-color: #DDD; }
+      span.head { background-color: #CCC; margin: 0ex; padding: 0ex 1ex; }
+      span.note { 
+        background-color: #FFF; 
+        margin: 0ex 0ex; 
+        padding: 0ex 1ex; 
+        position: absolute;
+        top: 3ex; left: 1ex;
+        z-index: -9;
+        text-align: left;
+      }
+      div { 
+        position: relative; 
+        height: 8ex; 
+        border: 0ex solid black; 
+        margin: 0; 
+        padding: 0;
+        text-align: right;
+      }
+      hr { border: 0.4ex solid #000; margin: 0; padding: 0}
+      hr#notdone { border: 1ex solid #FFF; }
+      hr.yoga { 
+        border-color: blue; 
+        position: absolute;
+        top: 3ex; left: 0%;
+        width: 100%;
+        z-index: -10;
+        padding: 0;
+        margin: 0;
+      }
+      span.yoga { color: blue; }
+      hr.fable { 
+        border-color: red; 
+        position: absolute;
+        top: 5ex; left: 0ex;
+        width: 100%;
+        z-index: -10;
+        padding: 0;
+        margin: 0;
+      }
+      span.fable { color: red; }
+      hr.mint { 
+        border-color: green; 
+        position: absolute;
+        height: 100%;
+        top: 0ex; left: 4ex;
+        padding: 0;
+        margin: 0;
+        z-index: -10;
+      }
+      span.mint { color: green; }
+      hr.crossfit { 
+        border-color: black; 
+        position: absolute;
+        height: 100%;
+        top: 0ex; left: 2ex;
+        padding: 0;
+        margin: 0;
+        z-index: -10;
+      }
+      span.crossfit { color: black; }
+      -->
+    </style>
+  </HEAD>
+  <% startday = @done.min(:day) - @done.min(:day).wday %>
+  <% endday = @done.max(:day) + (6 - @done.max(:day).wday) %>
+
+  <BODY>
+    <TABLE border="1">
+      <TR>
+        <% for day in startday..endday %>
+          <% if (day.wday % 7) == 0 %>
+            <%= "</TR><TR>" %>
+          <% end %>
+          <%= "<TD id=" + day.to_s + ">" %>
+            <%= "<DIV>" + day.to_s + "</DIV>" %>
+            <% @habits.each do |habit| %>
+              <%= "<hr class='habit #{habit.name}' />" %>
+            <% end %>
+            <%= "</TD>" %>
+        <% end %>
+      </TR>
+    </TABLE>
+  </BODY>
+</HTML>
